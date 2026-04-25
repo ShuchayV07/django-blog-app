@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{%load static%}
+{% block title %}
+   This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<section id="summary">
+  <h2>Post Title</h2>
+  <article>
+     <img src="{% static 'blog/images/mo.webp' %}" alt="Post Title">
+    <address>By Shuchay</address>
+    <div>
+      Last updated on <time>July 10th</time>
+    </div>
+  </article>
+</section>
+
+<main>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+Curabitur pretium tincidunt lacus, sed viverra nulla consectetur nec. Integer vel sem ut odio facilisis aliquet. Nulla facilisi. Proin in neque vitae ipsum tincidunt tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse potenti. Nam eget mauris at purus suscipit interdum. Cras auctor, nunc a luctus luctus, neque turpis cursus justo, vitae convallis risus metus nec libero.
+    </p>
+    <p>
+Phasellus gravida, velit at aliquet malesuada, sapien lorem fermentum risus, eget scelerisque purus nibh in est. Vivamus tincidunt, nibh sed facilisis dictum, enim nisl tempor metus, sed lacinia magna lorem vel erat. Integer dignissim, massa vel tempus faucibus, odio purus cursus sem, vitae vulputate urna nulla sit amet nibh.
+   </p>
+</main>
+{% endblock %}
