@@ -1,11 +1,11 @@
 {%load static%}
 <li>
       <article class="post">
-        <a href="{% url 'post-details-page' 'the-mountains' %}">
-            <img src="{% static 'blog/images/mo.webp' %}" alt="Mountain Hiking">
+        <a href="{% url 'post-details-page' post.slug %}">
+           <img src="{% static 'blog/images/' %}{{ post.image_name }}" alt="{{ post.title }}">
             <div class = 'post__content'>
-                <h3>Mountain Hiking </h3>
-                <p>There's nothing like the views you get hiking in the mountains </p>
+                <h3>{{ post.title }} </h3>
+                <p>{{ post.excerpt }} </p>
 
             </div>
         </a>
